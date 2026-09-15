@@ -2,12 +2,12 @@
 <settings>
     <profiles>
         <profile>
-            <id>lightwell-remediated</id>
+            <id>lw-remediated</id>
             <repositories>
                 <repository>
-                    <id>lightwell-remediated</id>
-                    <name>Red Hat Lightwell Network - Remediated</name>
-                    <url>https://packages.redhat.com/lightwell/public-lightwell-demo/java/remediated/</url>
+                    <id>lw-remediated</id>
+                    <name>lw-remediated</name>
+                    <url>zzzzzz</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
@@ -19,12 +19,12 @@
         </profile>
     </profiles>
     <activeProfiles>
-        <activeProfile>lightwell-remediated</activeProfile>
+        <activeProfile>lw-remediated</activeProfile>
     </activeProfiles>
 
     <servers>
         <server>
-            <id>lightwell-remediated</id>
+            <id>lw-remediated</id>
             <username>yyyyy</username>
             <password>xxxxx</password>
         </server>
