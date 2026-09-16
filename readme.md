@@ -174,3 +174,22 @@ Finalizing scan
  • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
 
 ```
+
+### OWASP Dependency-Check
+
+```
+$ cat dependency-check-report.html | grep "NVD API Last Modified"
+<li class="scaninfo hidden"><i>NVD API Last Modified</i>: 2026-09-16T10:16:56Z</li>
+
+$ mvn org.owasp:dependency-check-maven:help
+[INFO] Dependency-Check Maven Plugin 13.0.0
+
+$ mvn clean  org.owasp:dependency-check-maven:check -s settings.xml
+
+One or more dependencies were identified with known vulnerabilities in java-lib-remediation-poc:
+
+json-path-2.8.0.rhlw-00001.jar (pkg:maven/com.jayway.jsonpath/json-path@2.8.0.rhlw-00001, cpe:2.3:a:json-path:jayway_jsonpath:2.8.0.hlw-00001:*:*:*:*:*:*:*) : CVE-2023-51074
+spring-core-5.3.18.rhlw-00003.jar (pkg:maven/org.springframework/spring-core@5.3.18.rhlw-00003, cpe:2.3:a:pivotal_software:spring_framework:5.3.18.hlw-00003:*:*:*:*:*:*:*, cpe:2.3:a:springsource:spring_framework:5.3.18.hlw-00003:*:*:*:*:*:*:*, cpe:2.3:a:vmware:spring_framework:5.3.18.hlw-00003:*:*:*:*:*:*:*) : CVE-2026-41855, CVE-2026-47884, CVE-2026-47891, CVE-2026-47892, CVE-2026-59313, CVE-2026-59283, CVE-2024-22259, CVE-2023-20860, CVE-2026-41838, CVE-2026-41842, CVE-2026-41848, CVE-2026-41849, CVE-2026-41850, CVE-2026-41851, CVE-2026-47886, CVE-2026-47888, CVE-2026-47893, CVE-2026-59282, CVE-2022-22971, CVE-2023-20861, CVE-2023-20863, CVE-2026-22740, CVE-2026-41844, CVE-2026-41845, CVE-2026-41846, CVE-2026-47887, CVE-2026-59281, CVE-2026-22737, CVE-2026-41840, CVE-2026-41841, CVE-2026-41843, CVE-2022-22970, CVE-2024-38820, CVE-2026-22745, CVE-2026-41847, CVE-2026-41852, CVE-2026-41853, CVE-2024-38808, CVE-2026-59280, CVE-2026-41839, CVE-2026-59314, CVE-2026-22741, CVE-2026-22735
+woodstox-core-6.0.3.rhlw-00001.jar (pkg:maven/com.fasterxml.woodstox/woodstox-core@6.0.3.rhlw-00001, cpe:2.3:a:fasterxml:woodstox:6.0.3.hlw-00001:*:*:*:*:*:*:*) : CVE-2022-40152
+
+```
