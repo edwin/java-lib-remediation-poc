@@ -1,0 +1,66 @@
+[
+    {
+      "@context": "https://openvex.dev/ns/v0.2.0",
+      "@id": "https://openvex.dev/docs/public/vex-somerandomid01",
+      "author": "Red Hat Lightwell",
+      "timestamp": "2023-09-23T15:28:16.853479631+07:00",
+      "version": 1,
+      "statements": [
+        {
+          "vulnerability": {"name": "CVE-2022-40152"},
+          "products": [
+            {"@id": "pkg:maven/com.fasterxml.woodstox/woodstox-core@6.0.3.rhlw-00001"}
+          ],
+          "status": "fixed"
+        }
+      ]
+    },
+    {
+      "@context": "https://openvex.dev/ns/v0.2.0",
+      "@id": "https://openvex.dev/docs/public/vex-somerandomid02",
+      "author": "Red Hat Lightwell",
+      "timestamp": "2023-09-23T15:28:16.853479631+07:00",
+      "version": 1,
+      "statements": [
+        {
+          "vulnerability": {"name": "CVE-2023-51074"},
+          "products": [
+            {"@id": "pkg:maven/com.jayway.jsonpath/json-path@2.8.0.rhlw-00001"}
+          ],
+          "status": "fixed"
+        }
+      ]
+    },
+    {
+      "@context": "https://openvex.dev/ns/v0.2.0",
+      "@id": "https://openvex.dev/docs/public/vex-somerandomid03",
+      "author": "Red Hat Lightwell",
+      "timestamp": "2023-09-23T15:28:16.853479631+07:00",
+      "version": 1,
+      "statements": [
+        {
+          "vulnerability": [{"name": "CVE-2022-45688"}, {"name": "CVE-2023-5072"}],
+          "products": [
+            {"@id": "pkg:maven/org.json/json@20220320.0.0.rhlw-00003"}
+          ],
+          "status": "fixed"
+        }
+      ]
+    },
+     {
+       "@context": "https://openvex.dev/ns/v0.2.0",
+       "@id": "https://openvex.dev/docs/public/vex-somerandomid04",
+       "author": "Red Hat Lightwell",
+       "timestamp": "2023-09-23T15:28:16.853479631+07:00",
+       "version": 1,
+       "statements": [
+         {
+           "vulnerability": [{"name": "CVE-2025-41249"}, {"name": "CVE-2026-41848"}],
+           "products": [
+             {"@id": "pkg:maven/org.springframework/spring-core@5.3.18.rhlw-00003"}
+           ],
+           "status": "fixed"
+         }
+       ]
+     }
+]
