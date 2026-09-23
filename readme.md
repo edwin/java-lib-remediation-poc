@@ -85,7 +85,7 @@ Total: 6 (UNKNOWN: 0, LOW: 1, MEDIUM: 2, HIGH: 3, CRITICAL: 0)
 
 ### Trivy for POM with Remediated CVE
 ```
-$ cp pom-with-cve.xml pom.xml
+$ cp pom-remediated.xml pom.xml
 
 $ trivy -v
 Version: dev
